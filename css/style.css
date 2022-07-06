@@ -1,0 +1,30 @@
+:root {
+    font-family: 'Poppins', sans-serif;
+    
+    --azul: #3772FF;
+    --verde: #36D6AD;
+    --coral: #FC7071;
+    --coral-claro: #FF9D9E;
+    --creme: #FCF0E3;
+    --cinza-escuro: #FCF0E3;
+    --cinza-medio: #BCBCBC;
+    --cinza-claro: #F6F6F6;    
+}
+
+.botao {
+    background-color: var(--coral);
+    color: var(--creme);  
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0.5rem;
+    width: 11.5rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer; 
+    transition: 0.5s;   
+}
+
+.botao:hover {
+    background-color: var(--coral-claro);    
+}

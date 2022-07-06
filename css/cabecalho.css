@@ -1,0 +1,79 @@
+.cabecalho {    
+    background-color: var(--azul);
+    background-image:  
+        url("../img/Forma1.svg"),       
+        url("../img/Logo-creme.svg");
+    background-repeat: no-repeat;
+    background-position: left, center bottom 20%;
+    background-size: contain, 50% auto;
+    min-height: 50vh;
+    display: flex;
+    align-items: baseline;
+    justify-content: left;      
+}
+
+
+.cabecalho__home {
+    content: url("../img/Casa.svg");
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    padding: 3rem 2rem;
+    margin-left: 1rem;
+}
+
+.cabecalho__contato {
+    content: url("../img/Mensagens.svg");
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    padding: 3rem 2rem;
+}
+
+
+@media screen and (max-width: 425px) {
+    .cabecalho__logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 426px) {
+    .cabecalho {
+        background-position: left, center bottom 40%;
+        background-size: contain, 30% auto;  
+        min-height: 72vh;   
+        
+    }
+    
+    .cabecalho__logo {
+        content: url("../img/Logo-branca.svg");
+        background-repeat: no-repeat;
+        width: 6rem;
+        height: auto;
+        padding: 3rem 2rem;
+    }
+    
+    .cabecalho__home {
+        margin-left: 0;
+    }   
+}
+
+
+@media screen and (min-width: 769px) {
+    .cabecalho {
+        min-height: 50vh;           
+    }
+
+    .cabecalho__logo {
+        padding-left: 5rem;
+    }
+
+    .cabecalho__home {
+        padding: 3rem 0.5rem;
+        
+    }
+    
+    .cabecalho__contato {
+        padding: 3rem 2rem;
+    }
+}
